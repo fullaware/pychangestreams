@@ -5,7 +5,7 @@ import urllib.parse
 username=urllib.parse.quote_plus('test')
 password=urllib.parse.quote_plus('test')
 
-client = MongoClient('mongodb://%s:%s@192.168.33.188' % (username,password))
+client = MongoClient('mongodb+srv://%s:%s@192.168.33.188' % (username,password))
 
 db = client['sensorlog']
 
